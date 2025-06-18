@@ -1,0 +1,234 @@
+.segue-scene-config .form-fields input,
+.segue-scene-config .form-fields textarea {
+    padding: 3px 5px;
+    box-sizing: border-box;
+}
+
+.segue-options-group .hint {
+    text-align: right;
+}
+
+/* Custom Fonts */
+@font-face {
+  font-family: 'Almendra';
+  src: url('../assets/fonts/almendra-v27-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Balthazar';
+  src: url('../assets/fonts/balthazar-v17-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bellefair';
+  src: url('../assets/fonts/bellefair-v14-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chau Philomene One';
+  src: url('../assets/fonts/chau-philomene-one-v15-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Codystar';
+  src: url('../assets/fonts/codystar-v18-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Creepster';
+  src: url('../assets/fonts/creepster-v13-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ewert';
+  src: url('../assets/fonts/ewert-v26-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Frijole';
+  src: url('../assets/fonts/frijole-v14-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Germania One';
+  src: url('../assets/fonts/germania-one-v20-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Goudy Bookletter 1911';
+  src: url('../assets/fonts/goudy-bookletter-1911-v20-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Great Vibes';
+  src: url('../assets/fonts/great-vibes-v20-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grenze Gotisch';
+  src: url('../assets/fonts/grenze-gotisch-v19-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Griffy';
+  src: url('../assets/fonts/griffy-v22-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IM Fell English';
+  src: url('../assets/fonts/im-fell-english-v14-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Love Ya Like A Sister';
+  src: url('../assets/fonts/love-ya-like-a-sister-v22-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Macondo';
+  src: url('../assets/fonts/macondo-v26-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metal Mania';
+  src: url('../assets/fonts/metal-mania-v22-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modern Antiqua';
+  src: url('../assets/fonts/modern-antiqua-v25-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nosifer';
+  src: url('../assets/fonts/nosifer-v23-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Permanent Marker';
+  src: url('../assets/fonts/permanent-marker-v16-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pirata One';
+  src: url('../assets/fonts/pirata-one-v22-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quintessential';
+  src: url('../assets/fonts/quintessential-v23-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rock Salt';
+  src: url('../assets/fonts/rock-salt-v23-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik Distressed';
+  src: url('../assets/fonts/rubik-distressed-v1-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sancreek';
+  src: url('../assets/fonts/sancreek-v26-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sixtyfour Convergence';
+  src: url('../assets/fonts/sixtyfour-convergence-v4-latin_latin-ext_math_symbols-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sixtyfour';
+  src: url('../assets/fonts/sixtyfour-v2-latin_math_symbols-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Special Elite';
+  src: url('../assets/fonts/special-elite-v19-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Syne Mono';
+  src: url('../assets/fonts/syne-mono-v15-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trade Winds';
+  src: url('../assets/fonts/trade-winds-v17-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UnifrakturMaguntia';
+  src: url('../assets/fonts/unifrakturmaguntia-v21-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VT323';
+  src: url('../assets/fonts/vt323-v17-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,7 @@
+packs/** binary
+* text=auto
+assets/fonts/* binary
+*.woff2 binary
+media/* binary
+*.gif binary
+*.png binary

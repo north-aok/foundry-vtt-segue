@@ -1,0 +1,82 @@
+<div class="tab flexcol{{#if tab.active}} active{{/if}}" data-group="sheet" data-tab="segue">
+
+    <div class="form-group segue-options-group">
+        <label>{{localize "SEGUE.SceneConfig.EnableSegueScene"}}</label>
+        <div class="form-fields">
+            <input type="checkbox" name="flags.segue.enabled" {{#if segue.enabled}}checked{{/if}} />
+        </div>
+        <p class="hint" style="padding-right: 8px;">{{localize "SEGUE.SceneConfig.HintEnableSegueScene"}}</p>
+    </div>
+
+    <hr>
+
+    <div class="form-group segue-options-group">
+        <label for="segue-displayText">{{localize "SEGUE.SceneConfig.TextToDisplay"}}</label>
+        <textarea type="text" name="flags.segue.displayText" rows="5" placeholder="{{localize "SEGUE.SceneConfig.PlaceholderTextToDisplay"}}"
+            id="segue-displayText">{{segue.displayText}}</textarea>
+        <p class="hint">{{localize "SEGUE.SceneConfig.HintTextToDisplay"}}</p>
+    </div>
+
+    <div class="form-group segue-options-group">
+        <label for="segue-textSize">{{localize "SEGUE.SceneConfig.TextSize"}}</label>
+        <input type="number" name="flags.segue.textSize" value="{{segue.textSize}}" id="segue-textSize" min="10"
+            max="200" step="1" />
+        <p class="hint">{{localize "SEGUE.SceneConfig.HintTextSize"}}</p>
+    </div>
+
+    <div class="form-group segue-options-group">
+        <label for="segue-textColor">{{localize "SEGUE.SceneConfig.TextColor"}}</label>
+        <input type="color" name="flags.segue.textColor" value="{{segue.textColor}}" id="segue-textColor" />
+        <p class="hint">{{localize "SEGUE.SceneConfig.HintTextColor"}}</p>
+    </div>
+
+    <div class="form-group segue-options-group">
+        <label for="segue-fontFamily">{{localize "SEGUE.SceneConfig.FontFamily"}}</label>
+        <div class="form-fields">
+            <select name="flags.segue.fontFamily" data-dtype="String">
+                {{#each fontFamilies}}
+                <option value="{{this.value}}" {{#if (eq ../segue.fontFamily this.value)}}selected{{/if}}>
+                    {{this.label}}
+                </option>
+                {{/each}}
+            </select>
+        </div>
+        <p class="hint">{{localize "SEGUE.SceneConfig.HintFontFamily"}}</p>
+    </div>
+
+    <div class="form-group segue-options-group">
+        <label for="segue-fadeInDuration">{{localize "SEGUE.SceneConfig.SceneFadeInDuration"}}</label>
+        <input type="number" name="flags.segue.fadeInDuration" value="{{segue.fadeInDuration}}"
+            id="segue-fadeInDuration" min="0" />
+        <p class="hint">{{localize "SEGUE.SceneConfig.HintSceneFadeInDuration"}}</p>
+    </div>
+
+    <div class="form-group segue-options-group">
+        <label for="segue-textFadeInDuration">{{localize "SEGUE.SceneConfig.TextFadeInDuration"}}</label>
+        <input type="number" name="flags.segue.textFadeInDuration" value="{{segue.textFadeInDuration}}"
+            id="segue-textFadeInDuration" min="0" />
+        <p class="hint">{{localize "SEGUE.SceneConfig.HintTextFadeInDuration"}}</p>
+    </div>
+
+    <div class="form-group segue-options-group">
+        <label for="segue-textDisplayDuration">{{localize "SEGUE.SceneConfig.TextDisplayDuration"}}</label>
+        <input type="number" name="flags.segue.textDisplayDuration" value="{{segue.textDisplayDuration}}"
+            id="segue-textDisplayDuration" min="0" />
+        <p class="hint">{{localize "SEGUE.SceneConfig.HintTextDisplayDuration"}}</p>
+    </div>
+
+    <div class="form-group segue-options-group">
+        <label for="segue-textFadeOutDuration">{{localize "SEGUE.SceneConfig.TextFadeOutDuration"}}</label>
+        <input type="number" name="flags.segue.textFadeOutDuration" value="{{segue.textFadeOutDuration}}"
+            id="segue-textFadeOutDuration" min="0" />
+        <p class="hint">{{localize "SEGUE.SceneConfig.HintTextFadeOutDuration"}}</p>
+    </div>
+
+    <div class="form-group segue-options-group">
+        <label for="segue-fadeOutDuration">{{localize "SEGUE.SceneConfig.SceneFadeOutDuration"}}</label>
+        <input type="number" name="flags.segue.fadeOutDuration" value="{{segue.fadeOutDuration}}"
+            id="segue-fadeOutDuration" min="0" />
+        <p class="hint">{{localize "SEGUE.SceneConfig.HintSceneFadeOutDuration"}}</p>
+    </div>
+
+</div>

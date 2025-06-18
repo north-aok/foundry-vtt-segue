@@ -1,0 +1,19 @@
+{
+  "name": "segue",
+  "version": "1.0.0",
+  "description": "A Foundry VTT V13 module",
+  "main": "src/module.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "dotenv": "^16.5.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-static-copy": "^3.0.0"
+  }
+}
