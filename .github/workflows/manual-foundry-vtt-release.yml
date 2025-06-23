@@ -4,20 +4,23 @@ on:
   workflow_dispatch:
     inputs:
       package_id:
-        description: 'segue'
+        description: 'Package ID (DO NOT CHANGE THIS)'
         required: true
         default: 'segue'
       version:
-        description: '1.2.3'
+        description: 'Version'
         required: true
+        default: '1.2.3'
       manifest_url:
-        description: 'https://github.com/north-aok/foundry-vtt-segue/blob/main/dist/module.json'
+        description: 'Manifest URL from dist/ for release'
         required: true
+        default: 'https://github.com/north-aok/foundry-vtt-segue/blob/main/dist/module.json'
       notes_url:
-        description: 'https://github.com/north-aok/foundry-vtt-segue/releases/tag/v1.2.3'
+        description: 'Release notes URL (update version)'
         required: true
+        default: 'https://github.com/north-aok/foundry-vtt-segue/releases/tag/v1.2.3'
       dry_run:
-        description: 'Optional boolean'
+        description: 'Dry run?'
         type: boolean
         default: true
 
