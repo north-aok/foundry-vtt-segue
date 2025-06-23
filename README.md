@@ -7,7 +7,7 @@
 
 **Segue** is a system-agnostic, cinematic module for [Foundry Virtual Tabletop](https://foundryvtt.com/) V13+ that enables smooth, customizable fade-to-black scene transitions to enhance immersion for your GM storytelling and reduce perceived loading times between scene activations for connected players. Use it to introduce new locations, chapter changes, dramatic combat scenes or anything else!
 
-Several SIL Open Font License Google Fonts included.
+Several Google Fonts included. See [assets/fonts](assets/fonts/) for licensing and details.
 
 ---
 
@@ -55,6 +55,10 @@ Found in **Game Settings > Configure Settings > Segue**:
 ---
 
 ## Installation
+
+[https://foundryvtt.com/packages/foundry-vtt-segue](https://foundryvtt.com/packages/foundry-vtt-segue)
+
+Find it within Foundry's Add-on Modules, or to manually install:
 
 **https://github.com/north-aok/foundry-vtt-segue/releases/latest/download/module.json**
 
