@@ -38,7 +38,7 @@ jobs:
         with:
           url: 'https://api.foundryvtt.com/_api/packages/release_version/'
           method: 'POST'
-          headers: |
+          customHeaders: |
             {
               "Content-Type": "application/json",
               "Authorization": "${{ secrets.FOUNDRY_PACKAGE_RELEASE_TOKEN }}"
