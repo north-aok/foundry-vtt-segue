@@ -1,0 +1,61 @@
+name: Manual_Foundry_VTT_Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      package_id:
+        description: 'segue'
+        required: true
+        default: 'segue'
+      version:
+        description: '1.2.3'
+        required: true
+      manifest_url:
+        description: 'https://github.com/north-aok/foundry-vtt-segue/blob/main/dist/module.json'
+        required: true
+      notes_url:
+        description: 'https://github.com/north-aok/foundry-vtt-segue/releases/tag/v1.2.3'
+        required: true
+      dry_run:
+        description: 'Optional boolean'
+        type: boolean
+        default: true
+
+jobs:
+  manual_update:
+    runs-on: ubuntu-latest
+    environment: Manual_Foundry_VTT_Release
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: POST to Foundry Package Release API
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: 'https://api.foundryvtt.com/_api/packages/release_version/'
+          method: 'POST'
+          headers: '{"Content-Type": "application/json"}'
+          bearerToken: ${{ secrets.FOUNDRY_PACKAGE_RELEASE_TOKEN }}
+          data: |
+            {
+              "id": "${{ github.event.inputs.package_id }}",
+              "dry-run": ${{ github.event.inputs.dry_run }},
+              "release": {
+                "version": "${{ github.event.inputs.version }}",
+                "manifest": "${{ github.event.inputs.manifest_url }}",
+                "notes": "${{ github.event.inputs.notes_url }}",
+                "compatibility": {
+                  "minimum": "13",
+                  "verified": "13.345",
+                  "maximum": ""
+                }
+              }
+            }
+        id: foundry_api_call
+
+      - name: API Response
+        run: |
+          echo "FoundryVTT API Status: ${{ steps.foundry_api_call.outputs.status }}"
+          echo "FoundryVTT API Response Body:"
+          echo "${{ steps.foundry_api_call.outputs.response }}"
