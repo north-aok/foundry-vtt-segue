@@ -38,8 +38,11 @@ jobs:
         with:
           url: 'https://api.foundryvtt.com/_api/packages/release_version/'
           method: 'POST'
-          headers: '{"Content-Type": "application/json"}'
-          bearerToken: ${{ secrets.FOUNDRY_PACKAGE_RELEASE_TOKEN }}
+          headers: |
+            {
+              "Content-Type": "application/json",
+              "Authorization": "${{ secrets.FOUNDRY_PACKAGE_RELEASE_TOKEN }}"
+            }
           data: |
             {
               "id": "${{ github.event.inputs.package_id }}",
